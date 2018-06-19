@@ -1,17 +1,29 @@
 <template>
   <view class="container">
-    <text class="text-color-primary">My Vue Native App</text>
-    </view>
+    <text class="text-color-primary">{{ message }}</text>
+  </view>
 </template>
- 
+
+<script>
+export default {
+  data () {
+    return {
+      message: 'Hello, World!'
+    }
+  }
+}
+</script>
+
+
 <style>
 .container {
+  flex: 1;
   background-color: white;
   align-items: center;
   justify-content: center;
-  flex: 1;
 }
 .text-color-primary {
   color: blue;
+  font-size: 30;
 }
 </style>
