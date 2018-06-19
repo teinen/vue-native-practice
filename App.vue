@@ -1,11 +1,17 @@
 <template>
   <view class="container">
     <text class="text-color-primary">{{ message }}</text>
+    <button-comp></button-comp>
   </view>
 </template>
 
 <script>
+import Button from './modules/Button.vue'
+
 export default {
+  components: {
+    'button-comp': Button
+  },
   data () {
     return {
       message: 'Hello, World!'
