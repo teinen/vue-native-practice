@@ -1,16 +1,20 @@
 <template>
   <view class="container">
-    <text class="text-color-primary">{{ message }}</text>
-    <button-comp></button-comp>
+    <!-- <text class="text-color-primary">{{ message }}</text> -->
+    <todo-comp></todo-comp>
   </view>
 </template>
 
 <script>
-import Button from './modules/Button.vue'
+import Button from './src/modules/Button.vue'
+import Loop from './src/modules/Loop.vue'
+import ToDo from './src/modules/Todo.vue'
 
 export default {
   components: {
-    'button-comp': Button
+    'button-comp': Button,
+    'loop-comp': Loop,
+    'todo-comp': ToDo
   },
   data () {
     return {
