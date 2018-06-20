@@ -1,7 +1,7 @@
 <template>
   <view class="container">
     <!-- <text class="text-color-primary">{{ message }}</text> -->
-    <click-count-comp></click-count-comp>
+    <model-comp></model-comp>
   </view>
 </template>
 
@@ -10,13 +10,15 @@ import Button from './src/modules/Button.vue'
 import Loop from './src/modules/Loop.vue'
 import ToDo from './src/modules/Todo.vue'
 import ClickCount from './src/modules/ClickCount.vue'
+import Model from './src/modules/Model.vue'
 
 export default {
   components: {
     'button-comp': Button,
     'loop-comp': Loop,
     'todo-comp': ToDo,
-    'click-count-comp': ClickCount
+    'click-count-comp': ClickCount,
+    'model-comp': Model
   },
   data () {
     return {
